@@ -2,7 +2,7 @@ import s from "./Contact.module.css";
 import { FaUserTie } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
 import { useDispatch } from "react-redux";
-import { deleteContact } from "../../redux/contacts/contactsOps";
+import { deleteContact } from "../../redux/contacts/operations";
 import { motion } from "framer-motion";
 import toast from "react-hot-toast";
 
