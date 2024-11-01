@@ -1,0 +1,23 @@
+.wrap {
+  width: 100%;
+  background-image: url(../../img/Depositphotos_124780260_S-1-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: glow-border 5s infinite;
+  border-radius: 8px;
+}
+
+@keyframes glow-border {
+  0% {
+    border-color: rgba(100, 108, 255, 0.2);
+    box-shadow: 0 0 10px rgba(100, 108, 255, 0.3);
+  }
+  50% {
+    border-color: rgba(234, 115, 181, 0.8);
+    box-shadow: 0 0 20px rgba(221, 240, 163, 0.8);
+  }
+  100% {
+    border-color: rgba(100, 108, 255, 0.2);
+    box-shadow: 0 0 10px rgba(100, 108, 255, 0.3);
+  }
+}

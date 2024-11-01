@@ -1,3 +1,13 @@
+.container {
+  background-image: url(../../img/Depositphotos_124780260_S-1-1.jpg);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  animation: glow-border 2s infinite;
+}
+
 .Form {
   display: flex;
   flex-direction: column;
@@ -8,8 +18,8 @@
   background-color: rgba(130, 133, 134, 0.484);
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(245, 108, 163, 0.2);
-  animation: glow-border 4s infinite;
-
+  animation: glow-border 2s infinite;
+  animation: fadeIn 1s ease-in-out;
   transition: transform 0.3s ease;
 }
 
@@ -59,7 +69,7 @@ input {
   margin-left: auto;
   margin-right: auto;
   transition: cubic-bezier(0.165, 0.84, 0.44, 1);
-  /* animation: pulse 1.5s infinite; */
+  animation: pulse 1.5s infinite;
 }
 .button:hover {
   color: rgb(187, 7, 7);

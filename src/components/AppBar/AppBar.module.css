@@ -1,0 +1,33 @@
+.container {
+  margin: 0px auto;
+  padding: 0px 16px;
+  color: white;
+  font-weight: 700;
+  background-color: rgb(52, 85, 85);
+  animation: glow-border 8s infinite;
+  border-radius: 8px;
+}
+
+.header {
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px;
+  margin-bottom: 32px;
+}
+
+@keyframes glow-border {
+  0% {
+    border-color: rgba(100, 108, 255, 0.2);
+    box-shadow: 0 0 10px rgba(100, 108, 255, 0.3);
+  }
+  50% {
+    border-color: rgba(234, 115, 181, 0.8);
+    box-shadow: 0 0 20px rgba(221, 240, 163, 0.8);
+  }
+  100% {
+    border-color: rgba(100, 108, 255, 0.2);
+    box-shadow: 0 0 10px rgba(100, 108, 255, 0.3);
+  }
+}

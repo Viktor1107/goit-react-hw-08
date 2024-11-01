@@ -1,5 +1,9 @@
 .wrap {
-  display: flexbox;
+  justify-items: center;
+  align-content: center;
+
+  padding: 20px;
+
   & p {
     color: white;
     font-size: x-large;
