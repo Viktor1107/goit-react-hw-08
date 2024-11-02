@@ -1,7 +1,19 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import s from "./HomePage.module.css";
+import { useEffect } from "react";
+import { selectIsLoggedIn } from "../../redux/auth/selectors";
+import { useSelector } from "react-redux";
 
 const HomePage = () => {
+  const isLoggedIn = useSelector(selectIsLoggedIn);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (isLoggedIn) {
+      navigate("/user");
+    }
+  }, [isLoggedIn, navigate]);
+
   return (
     <div className={s.container}>
       <h1 className={s.title}>Welcome to Your Personal Phone Book</h1>

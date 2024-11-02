@@ -1,0 +1,42 @@
+.link {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+}
+
+.activeLink {
+  color: #087cef;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 16px;
+  background-color: rgb(52, 85, 85);
+  color: white;
+}
+
+.username {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.wrap {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.button {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  background-color: #087cef;
+  color: white;
+  font: inherit;
+}
